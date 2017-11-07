@@ -6,4 +6,4 @@ permalink: /about/
 published: true
 ---
 
-I'm **Francesco Maria Maglia** 
+I'm a Software Engineer 
