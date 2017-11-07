@@ -5,4 +5,4 @@ subtitle: Who the hell you think I am?
 permalink: /about/
 ---
 
-I'm Francesco Maria Maglia and I
+I'm a *software craftsman* working for a gaming company.   
