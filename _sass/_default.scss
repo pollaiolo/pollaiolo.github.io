@@ -26,10 +26,6 @@ img {
     max-width: 100%;
 }
 
-img-circle {
-        border-radius: 50%;
-            }
-
 blockquote {
     letter-spacing: 3px;
     margin:0px;
@@ -67,6 +63,10 @@ strong {
 }
 
 /* =Header */
+.img-circle {
+    border-radius: 50%;
+}
+
 .wrapper {
     max-width: 800px;
     margin: 100px auto;
