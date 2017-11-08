@@ -1,6 +1,6 @@
 # Site settings
 title: dev.log
-description: An awesome blog 
+description: just a dev journal 
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://pollaiolo.github.io" # the base hostname & protocol for your site
@@ -11,6 +11,7 @@ author:
   github: pollaiolo
   instagram: francaglia
   facebook: fmaglia1
+  linkedin: frmaglia
   # disqus: your_disqus_forum_shortname
 
 # google_analytics: 'UA-XXXXXXXX-X'
