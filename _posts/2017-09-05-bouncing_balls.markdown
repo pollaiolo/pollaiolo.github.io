@@ -13,7 +13,7 @@ However, there is a place where no physics law exists and nothing really happens
 
 What I'd like to show here is an introduction on how we can model physics laws in a virtual place and interact with it. The virtual space will be an `HTML` canvas, the physics law will be the [Newton's second law][https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion] and our interaction will be through [leap motion][https://www.leapmotion.com/] device.\\
 In this project I'm using [p5.js][https://p5js.org/] to help me with physics and rendering. This library is quite popular and powerfull, it doesn't do anything more than calling a function forever, this one:
-~~~ javascript
+~~~
 function draw() {
 	background(127);
 	frame = controller.frame();
