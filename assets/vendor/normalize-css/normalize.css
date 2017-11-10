@@ -231,7 +231,15 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 0.8em;
+  display: inline;
+  background-color: #3d3d3d;
+  color: #ddcba8;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 6%;
+  padding: 2px;
 }
 
 /* Forms
