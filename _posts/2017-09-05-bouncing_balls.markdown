@@ -18,12 +18,12 @@ Let's create a new html page importing the libraries we'll use in this project:
 {%highlight html%}
 <!DOCTYPE html>
 <html>
-	<head>
-		<script src="https://js.leapmotion.com/leap-0.6.4.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
-		<script src="ball.js"></script>
-   		<script src="sketch.js"></script>
-		<title>Sketch</title>
-	</head>
+ <head>
+  <script src="https://js.leapmotion.com/leap-0.6.4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
+  <script src="ball.js"></script>
+  <script src="sketch.js"></script>
+  <title>Sketch</title>
+ </head>
 </html>
 {%endhighlight%}
