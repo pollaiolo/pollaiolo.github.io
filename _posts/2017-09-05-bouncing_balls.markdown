@@ -26,4 +26,4 @@ Let's create a new html page importing the libraries we'll use in this project:
 		<title>Sketch</title>
 	</head>
 </html>
-{%endhiglight%}
+{%endhighlight%}
