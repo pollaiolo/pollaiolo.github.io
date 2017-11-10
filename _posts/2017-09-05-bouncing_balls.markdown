@@ -36,3 +36,23 @@ function draw() {
    background(127);
 }
 {%endhighlight%}
+## Leap Motion
+Leap is a device to track hands. It has a two cameras and an infrared sensors to track up to 10 moving fingers (two hands, in other words). It offers usefull **API** to easily detect, in each captured frame, the position of hands, fingers and arms.\\
+Let's wire this into our program:      
+{%highlight javascript%}
+function setup() {
+   createCanvas(windowWidth - 20, windowHeight - 20);
+   controller = new Leap.Controller();
+   controller.connect();
+}
+
+function draw() {
+   background(1);
+   frame = controller.frame();
+   if (frame.hands.length > 1) {
+      background(0);
+   }
+}
+{%endhighlight%}
+Now everytime two hands are detected the background of the canvas is set to black.
+## Physics
