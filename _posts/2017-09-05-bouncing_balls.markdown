@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "It's a matter of physics: buoncing balls with leap and p5.js"
+title:  "A matter of physics: buoncing balls + leap + p5.js"
 subtitle: "F equals M times A"
 date:   2017-09-05 23:34:01
 comments: true
@@ -35,5 +35,4 @@ function draw() {
 			balls[i].bounce();
 	}
 }
-
 {% endhighlight %}
