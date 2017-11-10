@@ -29,7 +29,6 @@ Let's start creating a new html page importing the libraries we'll use in this p
 {%endhighlight%}
 ``sketch.js`` file will contain p5*js functions, just setup a new canvas in the page and draw a gray background every iteration:
 {%highlight javascript%}
-<!DOCTYPE html>
 function setup() {
 	createCanvas(windowWidth - 20, windowHeight - 20);
 }
