@@ -35,5 +35,4 @@ function setup() {
 function draw() {
    background(127);
 }
-   mario
 {%endhighlight%}
