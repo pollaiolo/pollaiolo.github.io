@@ -35,4 +35,5 @@ function draw() {
 			balls[i].bounce();
 	}
 }
+
 {% endhighlight %}
