@@ -12,6 +12,7 @@ Explaining natural phenomena with math is called *physics* and has been one of t
 However, there is a place where no physics law exists and nothing really happens. I'm talking about the virtual space we usually work with: software. Even if I'm writing this, there's no ink who wets the paper but you're still able to read this post. Softwares create a virtual place where we can do everything we do in reality but without struggling with physics laws.
 
 What I'd like to show here is an introduction to how we can model physics laws in a virtual place and interact with it. The virtual space will be an html canvas, the physics law will be the [Newton's second law](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion) and our interaction will be through a [leap motion](https://www.leapmotion.com/) device.
+
 ## p5*js
 In this project I'm using [p5*js](https://p5js.org/) to help me with physics and rendering. This library is quite popular and powerfull; it doesn't do anything more than calling a function once `setup()` and another one forever `draw()`. 
 Let's start creating a new html page importing the libraries we'll use in this project:
@@ -36,6 +37,7 @@ function draw() {
    background(127);
 }
 {%endhighlight%}
+
 ## Leap Motion
 Leap is a device to track hands. It has a two cameras and an infrared sensors to track up to 10 moving fingers (two hands, in other words). It offers usefull **API** to easily detect, in each captured frame, the position of hands, fingers and arms.\\
 Let's wire this into our program:      
