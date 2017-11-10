@@ -39,7 +39,7 @@ function draw() {
 {%endhighlight%}
 
 ## Leap Motion
-Leap is a device to track hands. It has a two cameras and an infrared sensors to track up to 10 moving fingers (two hands, in other words). It offers usefull **API** to easily detect, in each captured frame, the position of hands, fingers and arms.\\
+Leap is a device to track hands. It has two cameras and an infrared sensors to track up to 10 moving fingers (two hands, in other words). It offers usefull **API** to easily detect, in each captured frame, the position of hands, fingers and arms.\\
 Let's wire this into our program:      
 {%highlight javascript%}
 function setup() {
