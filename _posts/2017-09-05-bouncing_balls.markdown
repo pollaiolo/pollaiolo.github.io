@@ -15,7 +15,7 @@ What I'd like to show here is an introduction to how we can model physics laws i
 ## p5*js
 In this project I'm using [p5.js](https://p5js.org/) to help me with physics and rendering. This library is quite popular and powerfull; it doesn't do anything more than calling a function once `setup()` and another one forever `draw()`. 
 Let's create a new html page importing the libraries we'll use in this project:
-{%higlight html%}
+{%highlight html%}
 <!DOCTYPE html>
 <html>
 	<head>
