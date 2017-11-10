@@ -49,10 +49,10 @@ function setup() {
 }
 
 function draw() {
-   background(1);
+   background(127);
    frame = controller.frame();
    if (frame.hands.length > 1) {
-      background(0);
+      background(1);
    }
 }
 {%endhighlight%}
