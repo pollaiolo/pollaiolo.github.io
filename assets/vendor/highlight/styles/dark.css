@@ -11,6 +11,7 @@ Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Or
   background: #3d3d3d;
   -webkit-text-size-adjust: none;
   border-radius: 3px;
+  font-size: 13px;
 }
 
 .hljs-keyword,
