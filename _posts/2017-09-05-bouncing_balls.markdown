@@ -22,7 +22,10 @@ function setup() {
 	controller = new Leap.Controller();
 	controller.connect();
 	for (var i = 10; i > 0; i--) {
-		balls[i] = new Ball(random(10, width), height - 200, random(20, 90));
+		balls[i] = new Ball(
+			random(10, width), // position.x
+			height - 200,      // position.y
+			random(20, 90));   // mass
 	}
 }
 {% endhighlight %}
