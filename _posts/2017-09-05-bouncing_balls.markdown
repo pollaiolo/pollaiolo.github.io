@@ -62,7 +62,7 @@ If you've ever studied physics (I suppose you did) you'd know about forces. A fo
 > Velocity is a **physical vector** quantity; both magnitude and direction are needed to define it. 
 
 The force I used in this project is an *acceleration* controlled by the hand recognized with leap controller; whenever two hands are recognized a double acceleration is applied to the balls. The hands apply a vertical acceleration to the balls contrasting the gravitational, the vectors associated with those forces are:\\
-`forceRHand = createVector(0, -150);\\
- forceLHand = createVector(0, -150);` 
+`forceRHand = createVector(0, -150);`\\
+`forceLHand = createVector(0, -150);` 
 
 **p5*js** has nice functions to help working with vectors including math operations. In this project I'm using balls as objects and each one will be represented by three vectors: position, velocity and acceleration.  
