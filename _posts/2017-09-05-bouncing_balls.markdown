@@ -90,6 +90,7 @@ Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$
       var acc = p5.Vector.div(acceleration, this.mass);
       this.acceleration.add(acc);
    }
+{%endhighlight%}
 {%highlight javascript%}
   this.update = function() {
       this.velocity.add(this.acceleration);
