@@ -58,6 +58,7 @@ function draw() {
 Now everytime two hands are detected the background of the canvas is set to black.
 
 ## Physics
-If you've ever studied physics (I suppose you did) you'd know about forces. A force is a vector applied to an object which can cause a change in its *velocity*. Here I'm referring to the physics concept of *velocity*:
+If you've ever studied physics (I suppose you did) you'd know about forces. A force is a vector applied to an object which can cause a change in its *velocity*. Here I'm referring to the physics concept of velocity:
+> Velocity is a **physical vector** quantity; both magnitude and direction are needed to define it. 
 
-> Velocity is a physical vector quantity; both magnitude and direction are needed to define it. 
+**p5*js** has nice functions to help working with vectors including math operations. In this project I'm using balls as objects and they will be represented by three vectors: position, velocity and acceleration. 
