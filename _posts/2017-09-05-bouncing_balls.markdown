@@ -68,4 +68,38 @@ While the gravitational attraction is:\\
 `gravity = createVector(0, balls[i].mass)`\\
 As you can see the vector's magnitude is proportional to the mass of the ball (this is just a semplification and doesn't correspond exactly to earth gravity).  
 
-**p5*js** has nice functions to help working with vectors including math operations. In this project I'm using balls as objects and each one will be represented by three vectors: position, velocity and acceleration. At any time a ball will have a position in the canvas, velocity and accelaration 
+**p5*js** has nice functions to help working with vectors including math operations. In this project I'm using balls as objects and each one will be represented by three vectors (position, velocity and acceleration) and a scalar (mass):
+{%highlight javascript%}
+function Ball(x, y, m) {
+
+   this.mass = m;
+   this.position = createVector(x, y);
+   this.velocity = createVector(0, 0);
+   this.acceleration = createVector(0, 0);
+{%endhighlight%}
+A ball can dispay itself in the canvas:
+{%highlight javascript%}
+   this.display = function() {
+      stroke(2);
+      ellipse(this.position.x, this.position.y, this.mass, this.mass);
+   }
+{%endhighlight%}
+Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$ 
+{%highlight javascript%}
+   this.applyForce = function(acceleration) {
+      var acc = p5.Vector.div(acceleration, this.mass);
+      this.acceleration.add(acc);
+   }
+{%highlight javascript%}
+  this.update = function() {
+      this.velocity.add(this.acceleration);
+      this.position.add(this.velocity);
+      this.acceleration.mult(0);
+   }
+{%endhighlight%}
+{%highlight javascript%}
+   this.bounce = function() {
+      // reminder omitted here
+   }
+{%endhighlight%}
+Every time the `draw()` function is called from **p5*js**  
