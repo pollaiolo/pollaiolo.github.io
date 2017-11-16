@@ -8,6 +8,9 @@ categories: [physics]
 published: true
 ---
 ## Recipe
+<i class="fa fa-check-square" style="color:#828282"></i> **[p5*js](https://p5js.org/)** \\
+<i class="fa fa-check-square" style="color:#828282"></i> **[Leap Motion](https://www.leapmotion.com/)** \\
+<i class="fa fa-play-circle" style="color:#828282"></i> **[Demo](https://pollaiolo.github.io/bouncing-balls/)** 
 
 Explaining natural phenomena with math is called *physics* and has been one of the human goal since we exist. We are sorrounded by physics, when we stand up we fight against the gravitational attraction that wants us to sit.\\
 However, there is a place where no physics law exists and nothing really happens. I'm talking about the virtual space we usually work with: software. Even if I'm writing this, there's no ink who wets the paper; softwares create a virtual place where we can do everything we do in reality but without struggling with physics laws.
