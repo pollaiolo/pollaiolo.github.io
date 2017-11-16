@@ -99,7 +99,7 @@ Every time the `draw()` function is called it will perform those actions on the 
    Vectorial sums are performed to update every ball component; acceleration is added to the velocity and velocity is added to position. The acceleration vector is then set to 0 since this force is not continuous in time.\\
 `display` to show the ball in the canvas.\\
 `bounce` to check if the ball is touching the edges of the canvas.
-   There's another force considered in this function: *friction*. This vector opposes to the ball when rolling and pushes it, proportionally to its mass, in the opposite direction. Check the sources for details.
+   There's another force considered in this function: *friction*. This vector opposes to the ball when rolling and pushes it in the opposite direction proportionally to its mass. Check the sources for details.
 
 The `sketch.js` function will be then composed as follow:
 {%highlight javascript%}
