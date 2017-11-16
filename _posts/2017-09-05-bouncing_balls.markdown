@@ -8,8 +8,8 @@ categories: [physics]
 published: true
 ---
 ## Recipe
-<i class="fa fa-heart" style="color:#c7254e"></i> **[p5*js](https://p5js.org/)** 
-<i class="fa fa-heart" style="color:#c7254e"></i> **[leap motion](https://www.leapmotion.com/)**
+<i class="fa fa-heart" style="color:#c7254e"></i> **[p5*js](https://p5js.org/)** \\
+<i class="fa fa-heart" style="color:#c7254e"></i> **[leap motion](https://www.leapmotion.com/)**\\
 <iframe src="https://pollaiolo.github.io/bouncing-balls/"></iframe> 
 
 Explaining natural phenomena with math is called *physics* and has been one of the human goal since we exist. We are sorrounded by physics, when we stand up we fight against the gravitational attraction that wants us to sit.\\
