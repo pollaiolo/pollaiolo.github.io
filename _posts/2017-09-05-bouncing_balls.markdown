@@ -61,7 +61,7 @@ Now everytime two hands are detected the background of the canvas is set to blac
 If you've ever studied physics (I suppose you did) you'd know about forces. A force is a vector applied to an object which can cause a change in its *velocity*. Here I'm referring to the physics concept of velocity:\\
 *Velocity is a **physical vector** quantity; both magnitude and direction are needed to define it.*
 
-The force I'm using in this project is an *acceleration* controlled by the hand recognized with leap controller; whenever two hands are recognized a double acceleration is applied to the balls. The hands apply a vertical acceleration to the balls contrasting the gravitational attraction. The vectors associated with those forces are: `forceRHand = createVector(0, -150)` and `forceLHand = createVector(0, -150)`. \\
+The force I'm using in this project is an *acceleration* controlled by the hand recognized with leap controller; whenever two hands are recognized a double acceleration is applied to the balls. The hands apply a vertical acceleration to the balls contrasting the gravitational attraction. The vector associated with those forces is: `forceHand = createVector(0, -150)`\\
 While the gravitational attraction is `gravity = createVector(0, balls[i].mass)`.\\
 As you can see the vector's magnitude is proportional to the mass of the ball (this is just a semplification and doesn't correspond exactly to earth gravity).  
 
@@ -95,12 +95,12 @@ function Ball(x, y, m) {
    }
 {%endhighlight%}
 Every time the `draw()` function is called from **p5*js** it will perform those actions on the ball:
-1. `applyForce` to apply gravitational acceleration and possible other forces.
+* `applyForce` to apply gravitational acceleration and possible other forces.
    Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$ to find out how the object is changing it's acceleration. In this example the formula would be: $$ A=F/M $$ where $$ F $$ is the current force (acceleration) applied to the ball. The obtained value is then added to the actual acceleration.
-2. `update` to update the vectors describing the ball.
+* `update` to update the vectors describing the ball.
    Vectorial sums are performed to update every ball component; acceleration is added to the velocity and velocity is added to position. The acceleration vector is then set to 0 since this force is not continuous in time.
-3. `diplay` to show the ball in the canvas.
-4. `bounce` to check if the ball is touching the edges of the canvas.
+* `diplay` to show the ball in the canvas.
+* `bounce` to check if the ball is touching the edges of the canvas.
    There's another force considered in this function: `friction`. This vector opposes to the ball when rolling and pushes it, proportionally to its mass, in the opposite direction. Check the sources for details.
 
 The `sketch.js` function will be then composed as follow:
