@@ -34,7 +34,7 @@ function setup() {
    createCanvas(windowWidth - 20, windowHeight - 20);
 }
 function draw() {
-   background(127);
+   background(160);
 }
 {%endhighlight%}
 
@@ -61,8 +61,8 @@ Now everytime two hands are detected the background of the canvas is set to blac
 If you've ever studied physics (I suppose you did) you'd know about forces. A force is a vector applied to an object which can cause a change in its *velocity*. Here I'm referring to the physics concept of velocity:
 > Velocity is a **physical vector** quantity; both magnitude and direction are needed to define it. 
 
-The force I'm using in this project is an *acceleration* controlled by the hand recognized with leap controller; whenever two hands are recognized a double acceleration is applied to the balls. The hands apply a vertical acceleration to the balls contrasting the gravitational attraction. The vectors associated with those forces are: `forceRHand = createVector(0, -150)` and `forceLHand = createVector(0, -150)` \\
-While the gravitational attraction is `gravity = createVector(0, balls[i].mass)`\\
+The force I'm using in this project is an *acceleration* controlled by the hand recognized with leap controller; whenever two hands are recognized a double acceleration is applied to the balls. The hands apply a vertical acceleration to the balls contrasting the gravitational attraction. The vectors associated with those forces are: `forceRHand = createVector(0, -150)` and `forceLHand = createVector(0, -150)`. \\
+While the gravitational attraction is `gravity = createVector(0, balls[i].mass)`.\\
 As you can see the vector's magnitude is proportional to the mass of the ball (this is just a semplification and doesn't correspond exactly to earth gravity).  
 
 **p5*js** has nice functions to help working with vectors including math operations. In this project I'm using balls as objects and each one will be represented by three vectors (position, velocity and acceleration) and a scalar (mass):
@@ -73,31 +73,69 @@ function Ball(x, y, m) {
    this.position = createVector(x, y);
    this.velocity = createVector(0, 0);
    this.acceleration = createVector(0, 0);
-{%endhighlight%}
-A ball can dispay itself in the canvas:
-{%highlight javascript%}
+
    this.display = function() {
       stroke(2);
       ellipse(this.position.x, this.position.y, this.mass, this.mass);
    }
-{%endhighlight%}
-Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$ 
-{%highlight javascript%}
+
    this.applyForce = function(acceleration) {
       var acc = p5.Vector.div(acceleration, this.mass);
       this.acceleration.add(acc);
    }
-{%endhighlight%}
-{%highlight javascript%}
+
   this.update = function() {
       this.velocity.add(this.acceleration);
       this.position.add(this.velocity);
       this.acceleration.mult(0);
    }
-{%endhighlight%}
-{%highlight javascript%}
+
    this.bounce = function() {
       // reminder omitted here
    }
 {%endhighlight%}
-Every time the `draw()` function is called from **p5*js**  
+Every time the `draw()` function is called from **p5*js** it will perform those actions on the ball:
+* `applyForce` to apply gravitational acceleration and possible other forces.
+   Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$ to find out how the object is changing it's acceleration. In this example the formula would be: $$ A=F/M $$ where $$ F $$ is the current force (acceleration) applied to the ball. The obtained value is then added to the actual acceleration.
+* `update` to update the vectors describing the ball.
+   Vectorial sums are performed to update every ball component; acceleration is added to the velocity and velocity is added to position. The acceleration vector is then set to 0 since this force is not continuous in time.
+* `diplay` to show the ball in the canvas.
+* `bounce` to check if the ball is touching the edges of the canvas.
+   There's another force considered in this function: `friction`. This vector opposes to the ball when rolling and pushes it, proportionally to its mass, in the opposite direction. Check the sources for details.
+
+The `sketch.js` function will be then composed as follow:
+{%highlight javascript%}
+var balls = [];
+var controller;
+var frame;
+
+function setup() {
+   createCanvas(windowWidth - 20, windowHeight - 20);
+   forceHand = createVector(0, -150);
+   controller = new Leap.Controller();
+   controller.connect();
+   for (var i = 10; i > 0; i--) {
+      balls[i] = new Ball(random(10, width), height - 200, random(20, 40));
+   }
+}
+ 
+function draw() {
+   background(160);
+   frame = controller.frame();
+   for(var i = balls.length - 1; i > 0; i--) {
+      if (frame.hands.length == 1) {
+         balls[i].applyForce(forceHand);
+      } else if(frame.hands.length == 2) {
+         balls[i].applyForce(forceHand);
+         balls[i].applyForce(forceHand);
+      }
+      var gravity = createVector(0, balls[i].mass);
+      balls[i].applyForce(gravity);
+      balls[i].update();
+      balls[i].display();
+      balls[i].bounce();
+   }
+}
+{%endhighlight%}
+
+Since the **leap** controller is not widely used keyboard controls are added to sources. You can play it around using your arrow keys.  
