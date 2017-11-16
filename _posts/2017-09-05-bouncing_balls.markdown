@@ -92,7 +92,7 @@ function Ball(x, y, m) {
       // reminder omitted here
    }
 {%endhighlight%}
-Every time the `draw()` function is called from **p5*js** it will perform those actions on the ball:
+Every time the `draw()` function is called it will perform those actions on the ball:\\
 `applyForce` to apply gravitational acceleration and possible other forces.\\
    Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$ to find out how the object is changing it's acceleration. In this example the formula would be: $$ A=F/M $$ where $$ F $$ is the current force (acceleration) applied to the ball. The obtained value is then added to the actual acceleration.\\
 `update` to update the vectors describing the ball.
