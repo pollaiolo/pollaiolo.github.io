@@ -96,10 +96,10 @@ function Ball(x, y, m) {
 {%endhighlight%}
 Every time the `draw()` function is called from **p5*js** it will perform those actions on the ball:
 * `applyForce` to apply gravitational acceleration and possible other forces.
-   Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$ to find out how the object is changing it's acceleration. In this example the formula would be: $$ A=F/M $$ where $$ F $$ is the current force (acceleration) applied to the ball. The obtained value is then added to the actual acceleration.
+   Applying a force to the ball means applying the Newton's Second Law $$ F=M*A $$ to find out how the object is changing it's acceleration. In this example the formula would be: $$ A=F/M $$ where $$ F $$ is the current force (acceleration) applied to the ball. The obtained value is then added to the actual acceleration.\\
 * `update` to update the vectors describing the ball.
-   Vectorial sums are performed to update every ball component; acceleration is added to the velocity and velocity is added to position. The acceleration vector is then set to 0 since this force is not continuous in time.
-* `diplay` to show the ball in the canvas.
+   Vectorial sums are performed to update every ball component; acceleration is added to the velocity and velocity is added to position. The acceleration vector is then set to 0 since this force is not continuous in time.\\
+* `diplay` to show the ball in the canvas.\\
 * `bounce` to check if the ball is touching the edges of the canvas.
    There's another force considered in this function: `friction`. This vector opposes to the ball when rolling and pushes it, proportionally to its mass, in the opposite direction. Check the sources for details.
 
