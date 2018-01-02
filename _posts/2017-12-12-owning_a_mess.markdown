@@ -5,7 +5,7 @@ subtitle: "A long post about quality"
 date:   2017-12-12 23:34:01
 comments: true
 categories: [essentials]
-published: false
+published: true
 ---
 ## Recipe
 <i class="fa fa-check-square" style="color:#828282"></i> **Patience to read** \\
