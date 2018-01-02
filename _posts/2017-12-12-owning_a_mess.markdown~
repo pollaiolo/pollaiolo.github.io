@@ -17,7 +17,7 @@ I ended up building a fullstack application that you can see in my repository. D
 This post will not be about the web application and neither will be a transcription of the talk. What I would like to underline here is how *quality* can be achieved and why we should strive to keep it as high as possible.
 
 ## Quality Process
-Writing code with other people, for its nature, tends to chaos. A methodological approach to software development is needed to avoid to fight with colleagues and with clients eventually. This method is the *Software Process*. There are tons of definition on the web but I'd like to define it more pragmatically: a sequence of steps through which every component has to pass. Every member of the team has to agree on the defined process and follow it. In my experience I've always worked on **SCRUM** based processes where each component is *defined*, *developed*, *tested* and then *reviewed* before being considered completed. If a step fails then the component go back to the first step. This chain of steps is the internal core of the process which guarantee the correctness of each component. 
+Writing code with other people, for its nature, tends to chaos. A methodological approach to software development is needed to avoid to fight with colleagues and with clients eventually. This method is the *Software Process*. There are tons of definition on the web but I'd like to define it more pragmatically: a sequence of steps through which every component has to pass. Every member of the team has to agree on the defined process and follow it. In my experience I've always worked on **SCRUM** based processes where each component is *defined*, *developed*, *tested* and then *reviewed* before being considered completed. If a step fails then the component goes back to the first step. This chain of steps is the internal core of the process which guarantee the correctness of each component. 
 
 ## @author
 The JavaDoc keywork `@author` says what we are: authors. Characteristic of the authors is that they have readers; someone will read the code we write and will judge our work. I would like that who will read my code will say *"That's brilliant, let's reuse this component!"* and not *"WTF dude!"*.\\
@@ -26,6 +26,9 @@ As an author, I always sign my work (every `Java` class I write) and I think it'
 ## Comments
 Before even consider *Design Patterns*, in my opinion, we should think about code *expressiveness*. Code should be easy to read and I should be able to read the code as I read a story without losing myself investigating on which method does what. Reading a method shuold reveal its purpose without having to navigate infinite classes; everything should be *obvious*. Often, I realize to be little expressive when I feel the need to put a comment inside a function; I have to explain something that should be obvious.\\
 Disclaimer: comments are needed to explain *non-obvious* code choices and they should be present on every `public` function.
+
+## A time for programming
+Programming is a mental work that requires focus, absolute focus. Programming for 10 hours produces bad code and headaches. Code quality depends also on when you code.
 
 
 
