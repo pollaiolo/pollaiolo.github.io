@@ -1,7 +1,7 @@
 <div class="explore">
     <div class="explore__devider">*****</div>
     <div class="explore__label">
-    	<span><i class="fa fa-copyright"></i> 2018</span> 
+    	<span><i class="fa fa-copyright"></i> 2017</span> 
     	<span class="with-love"><i class="fa fa-heart" style="color:#c7254e"></i> Francesco Maria Maglia</span>
     	<span><i class="fa fa-power-off"></i> Powered by</span> 
     	<a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>
