@@ -22,7 +22,20 @@ In my experience I've always worked on **SCRUM** based processes where each comp
 
 ## We're @authors
 The JavaDoc keyword `@author` says what we are: authors. Characteristic of the authors is that they have readers; someone will read the code we write and will judge our work. I would like that who will read my code will say *"That's brilliant, let's reuse this component!"* and not *"WTF dude!"*.\\
-As an author, I always sign my work (every `Java` class I write) and I think it's a good way to obey me to write clean and concise code. Whenever I feel I wouldn't sign a class that means I have to refactor it because something is not good as it should be.
+As an author, I always sign my work (every `Java` class I write) and I think it's a good way to obey me to write clean and concise code.
+{%highlight java%}
+/**
+ * Decorator class providing retry mechanism when exceptions defined in {@link RetryConfiguration}
+ * are thrown.
+ *
+ * @author Francesco Maria Maglia, Ringmaster, f.maglia@ringmaster.it
+ */
+@Service("retryableRestTemplate")
+public class RetryableRestTemplate extends RestTemplate {
+   // reminder omitted
+}
+{%endhighlight%}
+Whenever I feel I wouldn't sign a class that means I have to refactor it because something is not good as it should be.
 
 ## Comments
 Before even consider *Design Patterns*, in my opinion, we should think about code *expressiveness*. Code should be easy to read and I should be able to read the code as I read a story without losing myself investigating on which method does what. Reading a method should reveal its purpose without having to navigate infinite classes; everything should be *obvious*. Often, I realize to be not really expressive when I feel the need to put a comment inside a function; I have to explain something that should be obvious.\\

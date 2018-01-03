@@ -17,7 +17,7 @@ I ended up building a fullstack application that you can see in my repository. D
 This post will not be about the web application and neither will be a transcription of the talk. I would like to show some *quality pills* and why we should strive to keep quality as high as possible.
 
 ## Quality Process
-Writing code with other people, for its nature, tends to chaos. A methodological approach to software development is needed to avoid to fight with colleagues and with clients eventually. This method is the *Software Process*. There are tons of definition on the web but I'd like to define it more pragmatically: a sequence of steps through which every component has to pass. Every member of the team has to agree on the defined process and follow it.\\
+Writing code with other people, for its nature, tends to chaos. A methodological approach to software development is needed to avoid to fight with colleagues and with clients eventually. This method is the *Software Process*. There are tons of definitions on the web but I'd like to define it more pragmatically: a sequence of steps through which every component has to pass. Every member of the team has to agree on the defined process and follow it.\\
 In my experience I've always worked on **SCRUM** based processes where each component is *defined*, *developed*, *tested* and then *reviewed* before being considered completed. If a step fails then the component goes back to the first step. This chain of steps is the internal core of the process which guarantees the correctness of each component. 
 
 ## We're @authors
