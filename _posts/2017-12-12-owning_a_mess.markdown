@@ -46,6 +46,7 @@ if S is a subtype of T, then objects of type T may be replaced with objects of t
 *"No client should be forced to depend on methods it does not use"*\\
 Split interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.
 ### Dependency Inversion
+*"Depends on abstractions not concretions"*\\
 High-level modules should not depend on low-level modules. Both should depend on abstractions.\\
 Abstractions should not depend on details. Details should depend on abstractions.
 ### DRY (don't repeat yourself)

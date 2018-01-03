@@ -37,7 +37,7 @@ Some principles to keep in mind while programming.
 *"A class should have only one reason to change"*\\
 Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
 ### Open/Closed
-*"software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"*\\
+*"Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"*\\
 A module will be said to be open if it is still available for extension. For example, it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs.\\
 A module will be said to be closed if it is available for use by other modules. This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding).
 ### Liskov Substitution
