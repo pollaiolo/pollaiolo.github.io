@@ -30,7 +30,6 @@ As an author, I always sign my work (every `Java` class I write) and I think it'
  *
  * @author Francesco Maria Maglia, Ringmaster, f.maglia@ringmaster.it
  */
-@Service("retryableRestTemplate")
 public class RetryableRestTemplate extends RestTemplate {
    // reminder omitted
 }
