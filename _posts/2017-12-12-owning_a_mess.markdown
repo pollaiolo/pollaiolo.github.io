@@ -20,7 +20,7 @@ This post will not be about the web application and neither will be a transcript
 Writing code with other people, for its nature, tends to chaos. A methodological approach to software development is needed to avoid to fight with colleagues and with clients eventually. This method is the *Software Process*. There are tons of definition on the web but I'd like to define it more pragmatically: a sequence of steps through which every component has to pass. Every member of the team has to agree on the defined process and follow it.\\
 In my experience I've always worked on **SCRUM** based processes where each component is *defined*, *developed*, *tested* and then *reviewed* before being considered completed. If a step fails then the component goes back to the first step. This chain of steps is the internal core of the process which guarantees the correctness of each component. 
 
-## @author
+## We're @authors
 The JavaDoc keyword `@author` says what we are: authors. Characteristic of the authors is that they have readers; someone will read the code we write and will judge our work. I would like that who will read my code will say *"That's brilliant, let's reuse this component!"* and not *"WTF dude!"*.\\
 As an author, I always sign my work (every `Java` class I write) and I think it's a good way to obey me to write clean and concise code. Whenever I feel I wouldn't sign a class that means I have to refactor it because something is not good as it should be.
 
