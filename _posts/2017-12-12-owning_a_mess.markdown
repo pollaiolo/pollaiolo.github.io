@@ -25,8 +25,8 @@ The JavaDoc keyword `@author` says what we are: authors. Characteristic of the a
 As an author, I always sign my work (every `Java` class I write) and I think it's a good way to obey me to write clean and concise code.
 {%highlight java%}
 /**
- * Decorator class providing retry mechanism when exceptions defined in {@link RetryConfiguration}
- * are thrown.
+ * Decorator class providing retry mechanism when exceptions defined in
+ * {@link RetryConfiguration} are thrown.
  *
  * @author Francesco Maria Maglia, Ringmaster, f.maglia@ringmaster.it
  */
