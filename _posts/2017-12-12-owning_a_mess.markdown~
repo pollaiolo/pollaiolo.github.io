@@ -46,6 +46,7 @@ if S is a subtype of T, then objects of type T may be replaced with objects of t
 *"No client should be forced to depend on methods it does not use"*\\
 Split interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.
 ### Dependency Inversion
+*"Depends on abstractions not concretions"*\\
 High-level modules should not depend on low-level modules. Both should depend on abstractions.\\
 Abstractions should not depend on details. Details should depend on abstractions.
 ### DRY (don't repeat yourself)
@@ -55,7 +56,7 @@ Duplication (inadvertent or purposeful duplication) can lead to maintenance nigh
 Most systems work best if they are kept simple rather than made complicated; therefore simplicity should be a key goal in design and unnecessary complexity should be avoided
 
 ## The cost of owning a mess
-Ok, but why? Mainly because everything we do will follow us; every poor design choice will come back to us. Working in a good way becomes a matter of professional survival. The cost we pay (how many hours we have to work) to maintain a product with poor quality is high. In products with bad code every little change that seems to be obvious it becomes complex a requires lot of time. Changing one line in one module requires to change other modules we never thought they could have been related. We need to take care of our craft.
+Ok, but why? Mainly because everything we do will follow us; every poor design choice will come back to us. Working in a good way becomes a matter of professional survival. The cost we pay (how many hours we have to work) to maintain a product with poor quality is high. In products with bad code every little change that seems to be obvious it becomes complex and requires lot of time. Changing one line in one module requires to change other modules we never thought they could have been related. We need to take care of our craft.
 
 
  

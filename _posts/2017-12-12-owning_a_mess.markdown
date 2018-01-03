@@ -56,7 +56,7 @@ Duplication (inadvertent or purposeful duplication) can lead to maintenance nigh
 Most systems work best if they are kept simple rather than made complicated; therefore simplicity should be a key goal in design and unnecessary complexity should be avoided
 
 ## The cost of owning a mess
-Ok, but why? Mainly because everything we do will follow us; every poor design choice will come back to us. Working in a good way becomes a matter of professional survival. The cost we pay (how many hours we have to work) to maintain a product with poor quality is high. In products with bad code every little change that seems to be obvious it becomes complex a requires lot of time. Changing one line in one module requires to change other modules we never thought they could have been related. We need to take care of our craft.
+Ok, but why? Mainly because everything we do will follow us; every poor design choice will come back to us. Working in a good way becomes a matter of professional survival. The cost we pay (how many hours we have to work) to maintain a product with poor quality is high. In products with bad code every little change that seems to be obvious it becomes complex and requires lot of time. Changing one line in one module requires to change other modules we never thought they could have been related. In the end, we just need to take care of our craft.
 
 
  
