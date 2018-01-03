@@ -37,13 +37,13 @@ Some principles to keep in mind when programming.
 *"A class should have only one reason to change"*
 Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
 ### Open/Closed
-*"software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"*
+*"software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification"*\\
 A module will be said to be open if it is still available for extension. For example, it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs.\\
 A module will be said to be closed if it is available for use by other modules. This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding).
 ### Liskov Substitution
 if S is a subtype of T, then objects of type T may be replaced with objects of type S (i.e. an object of type T may be substituted with any object of a subtype S) without altering any of the desirable properties of T (correctness, task performed, etc.). More formally, the Liskov substitution principle (LSP) is a particular definition of a subtyping relation, called (strong) behavioral subtyping.
 ### Interface segregation
-*"No client should be forced to depend on methods it does not use"*
+*"No client should be forced to depend on methods it does not use"*\\
 Split interfaces that are very large into smaller and more specific ones so that clients will only have to know about the methods that are of interest to them.
 ### Dependency Inversion
 High-level modules should not depend on low-level modules. Both should depend on abstractions.\\

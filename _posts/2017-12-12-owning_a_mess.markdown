@@ -32,7 +32,7 @@ Disclaimer: comments are needed to explain *non-obvious* code choices and they s
 Programming is a brain work that requires focus, absolute focus. Programming for 10 hours produces bad code and headaches. Code quality depends also on when you code.
 
 ## OOP Principles
-Some principles to keep in mind when programming.
+Some principles to keep in mind while programming.
 ### Single Responsibility
 *"A class should have only one reason to change"*
 Every module or class should have responsibility over a single part of the functionality provided by the software, and that responsibility should be entirely encapsulated by the class.
